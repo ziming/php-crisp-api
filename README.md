@@ -823,6 +823,187 @@ _👉 Notice: The `peopleID` argument can be an email or the `peopleID`._
 
 
 
+* **Website Batch**
+
+  * **Batch Resolve Items** [`user`]: [Reference](https://docs.crisp.chat/references/rest-api/v1/#batch-resolve-items)
+    * `CrispClient->websiteBatch->batchResolveItems(websiteId, data)`
+    * <details>
+      <summary>See Example</summary>
+
+      ```php
+      $websiteId = "8c842203-7ed8-4e29-a608-7cf78a7d2fcc";
+
+      $data = [
+        "sessions" => [
+          "session_19e5240f-0a8d-461e-a661-a3123fc6eec9",
+          "session_700c65e1-85e2-465a-b9ac-ecb5ec2c9881"
+        ]
+      ];
+
+      CrispClient->websiteBatch->batchResolveItems($websiteId, $data);
+      ```
+      </details>
+
+  * **Batch Unresolve Items** [`user`]: [Reference](https://docs.crisp.chat/references/rest-api/v1/#batch-unresolve-items)
+    * `CrispClient->websiteBatch->batchUnresolveItems(websiteId, data)`
+    * <details>
+      <summary>See Example</summary>
+
+      ```php
+      $websiteId = "8c842203-7ed8-4e29-a608-7cf78a7d2fcc";
+
+      $data = [
+        "sessions" => [
+          "session_19e5240f-0a8d-461e-a661-a3123fc6eec9",
+          "session_700c65e1-85e2-465a-b9ac-ecb5ec2c9881"
+        ]
+      ];
+
+      CrispClient->websiteBatch->batchUnresolveItems($websiteId, $data);
+      ```
+      </details>
+
+  * **Batch Read Items** [`user`]: [Reference](https://docs.crisp.chat/references/rest-api/v1/#batch-read-items)
+    * `CrispClient->websiteBatch->batchReadItems(websiteId, data)`
+    * <details>
+      <summary>See Example</summary>
+
+      ```php
+      $websiteId = "8c842203-7ed8-4e29-a608-7cf78a7d2fcc";
+
+      $data = [
+        "sessions" => [
+          "session_19e5240f-0a8d-461e-a661-a3123fc6eec9",
+          "session_700c65e1-85e2-465a-b9ac-ecb5ec2c9881"
+        ]
+      ];
+
+      CrispClient->websiteBatch->batchReadItems($websiteId, $data);
+      ```
+      </details>
+
+  * **Batch Unread Items** [`user`]: [Reference](https://docs.crisp.chat/references/rest-api/v1/#batch-unread-items)
+    * `CrispClient->websiteBatch->batchUnreadItems(websiteId, data)`
+    * <details>
+      <summary>See Example</summary>
+
+      ```php
+      $websiteId = "8c842203-7ed8-4e29-a608-7cf78a7d2fcc";
+
+      $data = [
+        "sessions" => [
+          "session_19e5240f-0a8d-461e-a661-a3123fc6eec9",
+          "session_700c65e1-85e2-465a-b9ac-ecb5ec2c9881"
+        ]
+      ];
+
+      CrispClient->websiteBatch->batchUnreadItems($websiteId, $data);
+      ```
+      </details>
+
+  * **Batch Remove Items** [`user`]: [Reference](https://docs.crisp.chat/references/rest-api/v1/#batch-remove-items)
+    * `CrispClient->websiteBatch->batchRemoveItems(websiteId, data)`
+    * <details>
+      <summary>See Example</summary>
+
+      ```php
+      $websiteId = "8c842203-7ed8-4e29-a608-7cf78a7d2fcc";
+
+      $data = [
+        "sessions" => [
+          "session_19e5240f-0a8d-461e-a661-a3123fc6eec9",
+          "session_700c65e1-85e2-465a-b9ac-ecb5ec2c9881"
+        ]
+      ];
+
+      CrispClient->websiteBatch->batchRemoveItems($websiteId, $data);
+      ```
+      </details>
+
+  * **Batch Report Items** [`user`]: [Reference](https://docs.crisp.chat/references/rest-api/v1/#batch-report-items)
+    * `CrispClient->websiteBatch->batchReportItems(websiteId, data)`
+    * <details>
+      <summary>See Example</summary>
+
+      ```php
+      $websiteId = "8c842203-7ed8-4e29-a608-7cf78a7d2fcc";
+
+      $data = [
+        "sessions" => [
+          "session_19e5240f-0a8d-461e-a661-a3123fc6eec9",
+          "session_700c65e1-85e2-465a-b9ac-ecb5ec2c9881"
+        ],
+        "flag" => "spam"
+      ];
+
+      CrispClient->websiteBatch->batchReportItems($websiteId, $data);
+      ```
+      </details>
+
+  * **Batch Block Items** [`user`]: [Reference](https://docs.crisp.chat/references/rest-api/v1/#batch-block-items)
+    * `CrispClient->websiteBatch->batchBlockItems(websiteId, data)`
+    * <details>
+      <summary>See Example</summary>
+
+      ```php
+      $websiteId = "8c842203-7ed8-4e29-a608-7cf78a7d2fcc";
+
+      $data = [
+        "sessions" => [
+          "session_19e5240f-0a8d-461e-a661-a3123fc6eec9",
+          "session_700c65e1-85e2-465a-b9ac-ecb5ec2c9881"
+        ],
+        "blocked" => true
+      ];
+
+      CrispClient->websiteBatch->batchBlockItems($websiteId, $data);
+      ```
+      </details>
+
+  * **Batch Routing Items** [`user`]: [Reference](https://docs.crisp.chat/references/rest-api/v1/#batch-routing-items)
+    * `CrispClient->websiteBatch->batchRoutingItems(websiteId, data)`
+    * <details>
+      <summary>See Example</summary>
+
+      ```php
+      $websiteId = "8c842203-7ed8-4e29-a608-7cf78a7d2fcc";
+
+      $data = [
+        "sessions" => [
+          "session_19e5240f-0a8d-461e-a661-a3123fc6eec9",
+          "session_700c65e1-85e2-465a-b9ac-ecb5ec2c9881"
+        ],
+        "assigned" => [
+          "user_id" => "a4c32c68-be91-4e29-b97e-b3b6af886eaa"
+        ]
+      ];
+
+      CrispClient->websiteBatch->batchRoutingItems($websiteId, $data);
+      ```
+      </details>
+
+  * **Batch Inbox Items** [`user`]: [Reference](https://docs.crisp.chat/references/rest-api/v1/#batch-inbox-items)
+    * `CrispClient->websiteBatch->batchInboxItems(websiteId, data)`
+    * <details>
+      <summary>See Example</summary>
+
+      ```php
+      $websiteId = "8c842203-7ed8-4e29-a608-7cf78a7d2fcc";
+
+      $data = [
+        "sessions" => [
+          "session_19e5240f-0a8d-461e-a661-a3123fc6eec9",
+          "session_700c65e1-85e2-465a-b9ac-ecb5ec2c9881"
+        ],
+        "inbox_id" => "d42e8b3b-ea8f-4e79-a9f8-d0e467fc1c31"
+      ];
+
+      CrispClient->websiteBatch->batchInboxItems($websiteId, $data);
+      ```
+      </details>
+
+
+
 ### Plugins
 
 * **Plugin Subscriptions**

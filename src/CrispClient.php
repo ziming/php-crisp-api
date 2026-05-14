@@ -13,6 +13,7 @@ use Crisp\Resources\PluginSubscriptions;
 use Crisp\Resources\UserProfile;
 use Crisp\Resources\Website;
 use Crisp\Resources\WebsiteAvailability;
+use Crisp\Resources\WebsiteBatch;
 use Crisp\Resources\WebsiteConversations;
 use Crisp\Resources\WebsiteOperators;
 use Crisp\Resources\WebsitePeople;
@@ -74,6 +75,10 @@ class CrispClient
      */
     public $websiteAvailability;
     /**
+     * @var WebsiteBatch
+     */
+    public $websiteBatch;
+    /**
      * @var WebsiteOperators
      */
     public $websiteOperators;
@@ -105,6 +110,7 @@ class CrispClient
         $this->websiteConversations = new WebsiteConversations($this);
         $this->websitePeople        = new WebsitePeople($this);
         $this->websiteAvailability  = new WebsiteAvailability($this);
+        $this->websiteBatch         = new WebsiteBatch($this);
         $this->websiteOperators     = new WebsiteOperators($this);
         $this->websiteVisitors      = new WebsiteVisitors($this);
         $this->pluginSubscriptions  = new PluginSubscriptions($this);
